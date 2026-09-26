@@ -1,0 +1,34 @@
+{
+  "name": "genpark-realtime-voice-agent-latency-telemetry-skill",
+  "version": "1.0.0",
+  "description": "End-to-end conversational voice agent latency telemetry profiler tracking VAD, STT, LLM-TTFT, TTS-TTFB, and playout bottlenecks.",
+  "category": "Service",
+  "author": "AlphaPark",
+  "tags": [
+    "latency-profiling",
+    "voice-agent",
+    "telemetry",
+    "ttft",
+    "ttfb",
+    "sla-monitoring",
+    "mcp"
+  ],
+  "tools": [
+    {
+      "name": "record_pipeline_event",
+      "description": "Record a stage transition timestamp (VAD, STT, LLM_START, LLM_TTFT, TTS_TTFB, PLAYOUT)."
+    },
+    {
+      "name": "compute_turn_latency_breakdown",
+      "description": "Calculate stage-by-stage latency breakdown and critical path for a conversation turn."
+    },
+    {
+      "name": "generate_sla_diagnostic_report",
+      "description": "Produce SLA latency percentiles (P50, P90, P99) and bottleneck diagnostic."
+    },
+    {
+      "name": "run_benchmark_telemetry_profiling",
+      "description": "Simulate and benchmark multi-turn voice session latency analytics."
+    }
+  ]
+}
